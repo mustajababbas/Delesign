@@ -457,11 +457,27 @@
 
         </div>
 
-            <button class="floating-btn draft">
+            <button class="floating-btn draft" id="project-draft">
 
                 <svg  focusable="false" viewBox="0 0 24 24" aria-hidden="true"><path d="M17 11h3c1.11 0 2-.9 2-2V5c0-1.11-.9-2-2-2h-3c-1.11 0-2 .9-2 2v1H9.01V5c0-1.11-.9-2-2-2H4c-1.1 0-2 .9-2 2v4c0 1.11.9 2 2 2h3c1.11 0 2-.9 2-2V8h2v7.01c0 1.65 1.34 2.99 2.99 2.99H15v1c0 1.11.9 2 2 2h3c1.11 0 2-.9 2-2v-4c0-1.11-.9-2-2-2h-3c-1.11 0-2 .9-2 2v1h-1.01c-.54 0-.99-.45-.99-.99V8h2v1c0 1.1.9 2 2 2z"></path></svg>
 
             </button>
+
+            <div class="project-draft hide">
+
+                <p class="project-draft-header">Project Drafts</p>
+
+                <div class="project-draft-list">
+
+                  <svg focusable="false" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M21 5v6.59l-2.29-2.3c-.39-.39-1.03-.39-1.42 0L14 12.59 10.71 9.3a.9959.9959 0 00-1.41 0L6 12.59 3 9.58V5c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2zm-3 6.42l3 3.01V19c0 1.1-.9 2-2 2H5c-1.1 0-2-.9-2-2v-6.58l2.29 2.29c.39.39 1.02.39 1.41 0l3.3-3.3 3.29 3.29c.39.39 1.02.39 1.41 0l3.3-3.28z"></path>
+                  </svg>
+
+                  <p>You don't have any drafts as of the moment.</p>
+
+                </div>
+              
+            </div>
 
       </section>
 
@@ -471,6 +487,15 @@
     <script src="assets/vendor/jquery.js"></script>
     <script src="assets/vendor/main.js"></script>
 
+    <script>
+
+        $("#project-draft").click(function(){
+
+          $(".project-draft").toggleClass("hide");
+
+        });
+
+    </script>
 
   
 </body>
