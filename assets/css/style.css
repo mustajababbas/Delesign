@@ -178,13 +178,14 @@ border: none;
 	color: var(--white);
 }
 
-.sidebar ul > li:hover a {
+/* .sidebar ul > li:hover a {
 	color: var(--white);
-}
+} */
 
 .sidebar ul .active{
 
 	background-color: var(--primary);
+	color: var(--white);
 	
 
 }
@@ -222,8 +223,38 @@ margin-right: 10px;
 .sidepanel-dd-ul{
 
 	display: none;
+	list-style: none;
+	padding: 0;
 	
 }
+
+.sidepanel-dd .dropdown-icon::after{
+
+	content: "\f077";
+	font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+	float: right;
+
+}
+
+.sidepanel-dd .dropdown-icon:not(.not-collapse)::after{
+
+	
+	content: "\f078";
+	font-family: "Font Awesome 6 Free"; 
+    font-weight: 900; 
+	float: right;
+
+}
+
+
+.sidepanel-dd-ul li a{
+
+	padding: 10px 20px 10px 60px !important;
+	font-size: 14px;
+}
+
+
 
 
 
@@ -908,4 +939,80 @@ line-height: 30px;
 	font-weight: 500;
     line-height: 22px;
 
+}
+
+/* SETTINGS */
+
+.edit-profile-pic input[type="file"]{
+
+display: none;
+
+}
+
+.edit-profile-pic #upload-profile{
+	
+	cursor: pointer;
+
+	}
+
+.edit-profile-pic{
+
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+
+}
+
+.edit-profile-pic .dp-box{
+
+	border-radius: 50%;
+	background-color: var(--secondary);
+	overflow: hidden;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+
+}
+
+.edit-profile-pic .dp-box img{
+	
+	width: 150px;
+
+}
+
+.edit-profile-pic .dp-box #toggle_user{
+
+	font-size: 3rem;
+
+}
+
+.edit-profile-pic .upload-btn{
+
+position: absolute;
+display: none;
+width: 100%;
+height: 100%;
+background-color: #ffffffb0;
+
+}
+
+
+.edit-profile-pic .upload-btn label{
+
+	font-size: 50px;
+	cursor: pointer;
+}
+	
+
+.edit-profile-pic .dp-box:hover .upload-btn{
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
 }

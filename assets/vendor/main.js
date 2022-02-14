@@ -8,6 +8,7 @@
           $(".sidepanel-dd").click(function(){
 
                 $(".sidepanel-dd-ul").slideToggle();
+                $(".dropdown-icon").toggleClass("not-collapse");
 
           });
 
@@ -17,3 +18,25 @@
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
   return new bootstrap.Tooltip(tooltipTriggerEl)
 })
+
+
+
+$(document).ready(() => {
+  $("#dp_uploaded").hide();
+    $("#upload-profile").change(function () {
+        const file = this.files[0];
+       
+        if (file) {
+            let reader = new FileReader();
+            reader.onload = function (event) {
+                $("#dp_uploaded").attr("src", event.target.result);
+                $("#dp_uploaded").show();
+                $("#toggle_user").remove();
+            };
+            reader.readAsDataURL(file);
+
+            
+
+        }
+    });
+});
