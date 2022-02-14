@@ -87,6 +87,8 @@ margin-bottom: 10px;
 
 
 .form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
 .form-group textarea{
 
     width: 100%;
@@ -1061,5 +1063,42 @@ background-color: #ffffffb0;
 .email-settings form{
 
 	margin-top: 25px;
+
+}
+
+.profile-extras ul{
+
+	list-style-type: none;
+	text-align: center;
+	padding: 0;
+
+}
+
+.profile-extras ul a{
+
+color: var(--primary-light);
+
+
+}
+
+
+.profile-extras ul li{
+
+
+	padding: 10px 0;
+	
+}
+
+
+.profile-first-section{
+
+	padding-bottom: 50px;
+	border-bottom: 2px solid var(--grey-bg);
+
+}
+
+.profile-second-section{
+
+	padding-top: 50px;
 
 }
