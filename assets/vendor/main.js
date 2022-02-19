@@ -40,3 +40,10 @@ $(document).ready(() => {
         }
     });
 });
+
+
+$("#project-draft").click(function(){
+
+  $(".project-draft").toggleClass(".hide");
+
+});
