@@ -47,3 +47,18 @@ $("#project-draft").click(function(){
   $(".project-draft").toggleClass(".hide");
 
 });
+
+
+$("#show-side-navigation").click(function(){
+
+
+  $("#side-navigation").css("width","250px");
+
+});
+
+$("#hide-side-navigation").click(function(){
+
+
+  $("#side-navigation").css("width","0");
+
+});

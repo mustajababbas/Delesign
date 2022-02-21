@@ -14,11 +14,13 @@
 <body>
 
 
-  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
-    <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="side-navigation">
+   
     <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
 
+     
       <img class="img-fluid"  src="/assets/images/logo_black.png" alt="">
+      <i class="fa-solid fa-xmark" id="hide-side-navigation"></i>
     
     </div>
   
@@ -43,11 +45,11 @@
       </li>
 
       <li class="">
-        <a href="#" class=""><img src="assets/images/home-icon-brands.png"> Brands</a>
+        <a href="brands.html" class=""><img src="assets/images/home-icon-brands.png"> Brands</a>
       </li>
 
       <li class="">
-       <a href="#" class=""><img src="assets/images/home-icon-contact.png"> Contact Support</a>
+       <a href="contact.html" class=""><img src="assets/images/home-icon-contact.png"> Contact Support</a>
       </li>
 
       <li class="">
@@ -55,16 +57,16 @@
        </li>
 
        <li class="">
-        <a href="#" class=""><img src="assets/images/home-icon-settings.png"> Settings</a>
+        <a href="setting.html" class=""><img src="assets/images/home-icon-settings.png"> Settings</a>
        </li>
 
        <li class="sidepanel-dd">
-        <a href="#" class=""><img src="assets/images/home-icon-integration.png"> Integrations</a>
+        <a href="#" class="dropdown-icon"><img src="assets/images/home-icon-integration.png"> Integrations</a>
 
           <ul class="sidepanel-dd-ul">
-            <li>Slack Integration</li>
-            <li>Delesign Api</li>
-            <li>Zapier Integration</li>
+            <li><a href="#">Slack Integration</a></li>
+            <li><a href="#">Delesign Api</a></li>
+            <li><a href="#">Zapier Integration</a></li>
           </ul>
 
        </li>
@@ -79,16 +81,18 @@
 
 
     </ul>
-</aside>
-      
+
+  </aside>
+
       <section id="wrapper">
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid mx-2">
             <div class="navbar-header">
+              <i class="fa-solid fa-bars" id="show-side-navigation"></i>
+              <p class="navbar-title"><img src="assets/images/create_project_icon.png" alt="">&nbsp; All Projects</p>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="uil-bars text-white"></i>
+                <i class="fa-solid fa-ellipsis"></i>
               </button>
-              <p class="navbar-title"><img src="assets/images/create_project_icon.png">&nbsp; All Projects</p>
             </div>
             <div class="collapse navbar-collapse" id="toggle-navbar">
               <ul class="navbar-nav ms-auto custom-dropdown">
@@ -245,40 +249,40 @@
 
             </div>
 
-            <nav class="project-category">
-                <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                    <nav class="project-category">
+                        <div class="nav nav-tabs" id="nav-tab" role="tablist">
 
-                    <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
-                        All
-                    </button>
+                            <button class="nav-link active" id="all-tab" data-bs-toggle="tab" data-bs-target="#all" type="button" role="tab" aria-controls="all" aria-selected="true">
+                                All
+                            </button>
 
-                   
-                    <button class="nav-link" id="priority-tab" data-bs-toggle="tab" data-bs-target="#priority" type="button" role="tab" aria-controls="priority" aria-selected="true">
-                        Priority
-                    </button>
+                          
+                            <button class="nav-link" id="priority-tab" data-bs-toggle="tab" data-bs-target="#priority" type="button" role="tab" aria-controls="priority" aria-selected="true">
+                                Priority
+                            </button>
 
 
-                    <button class="nav-link" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">
-                        Active
-                    </button>
+                            <button class="nav-link" id="active-tab" data-bs-toggle="tab" data-bs-target="#active" type="button" role="tab" aria-controls="active" aria-selected="true">
+                                Active
+                            </button>
 
-                    <button class="nav-link" id="queue-tab" data-bs-toggle="tab" data-bs-target="#queue" type="button" role="tab" aria-controls="queue" aria-selected="true">
-                        In Queue
-                    </button>
+                            <button class="nav-link" id="queue-tab" data-bs-toggle="tab" data-bs-target="#queue" type="button" role="tab" aria-controls="queue" aria-selected="true">
+                                In Queue
+                            </button>
 
-                    <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-controls="completed" aria-selected="true">
-                        Completed
-                    </button>
+                            <button class="nav-link" id="completed-tab" data-bs-toggle="tab" data-bs-target="#completed" type="button" role="tab" aria-controls="completed" aria-selected="true">
+                                Completed
+                            </button>
 
-                    <button class="nav-link" id="trash-tab" data-bs-toggle="tab" data-bs-target="#trash" type="button" role="tab" aria-controls="trash" aria-selected="true">
-                        Trash
-                    </button>
-                  
+                            <button class="nav-link" id="trash-tab" data-bs-toggle="tab" data-bs-target="#trash" type="button" role="tab" aria-controls="trash" aria-selected="true">
+                                Trash
+                            </button>
+                          
 
-                </div>
-            </nav>
+                        </div>
+                    </nav>
 
-            <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-content" id="nav-tabContent">
 
                     <div class="tab-pane fade show active projects-tabs" id="all" role="tabpanel" aria-labelledby="all-tab">
                         
@@ -290,7 +294,7 @@
 
                             <div class="project-user-meta">
                                 
-                                <div class="d-flex align-items-center" style="flex-basis: 35%;">
+                                <div class="d-flex align-items-center project-user-name">
                             
                                     <i class="fa-solid fa-sort first"></i>
 
@@ -318,70 +322,43 @@
                                         <span>1</span>
                                     </div>
                                     
-                                    <div class="dropdown">
-                                        <button class="btn btn-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <i class="fa-solid fa-ellipsis-vertical"></i>
-                                        </button>
-                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                          <a class="dropdown-item" href="#">Action</a>
-                                          <a class="dropdown-item" href="#">Another action</a>
-                                          <a class="dropdown-item" href="#">Something else here</a>
-                                        </div>
+                                    <div class="project-actions">
+                                      <button class="" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                      <li><a class="dropdown-item" href="create-project-detail.html">Edit</a></li>
+                                      <li><a class="dropdown-item" href="#">Remove</a></li>
+                                      
+                                      </ul>
+                                    </div>
+
                                     </div>
                                 </div>
 
-                            </div>
-
-
                         </div>
 
-                        
-                        <h5 >Active</h5>
+                        <h5>Active</h5>
                         <div class="projects-box">
 
-                            <div class="project-user-meta">
-                                
-                                <div class="d-flex align-items-center" style="flex-basis: 35%;">
-                            
-                                
-
-                                    <div class="projects-names second">
-                                        <h4>Motion Graphic Content [35205]</h4>
-
-                                        <span>
-                                            <i class="fa-solid fa-comments"></i><p>Omar Mo</p>
-                                        </span>
-
-                                        <ul class="">
-                                            <li>Date Created: Aug 9,2021 11:31am</li>
-                                            <li>Date Created: Aug 9,2021 11:31am</li>
-                                        </ul>
-
-                                    </div>
-                                </div>
-
-                                <span class="project-pic third">
-                                    <img src="assets/images/placeholder.png">
-                                </span>
-
-                                <div class="project-settings forth justify-content-end">
-                                    <i class="fa-solid fa-ellipsis-vertical"></i>
-                                </div>
-
-                            </div>
-
+                            <p>You Dont Have Any Active Project</p>
 
                         </div>
                         
+
+
                         <h5 >Queue</h5>
                         <div class="projects-box">
 
                             <p>You Dont Have Any Queue Project</p>
 
                         </div>
+
                         
 
+
                     </div>
+
 
                     <div class="tab-pane fade show projects-tabs" id="priority" role="tabpanel" aria-labelledby="priority-tab">
                   
@@ -466,6 +443,8 @@
                         
                     </div>
 
+                  </div>
+
             </div>
 
 
@@ -499,8 +478,7 @@
 
 
       <script src="assets/vendor/jquery.js"></script>
-      <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
-      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
       <script src="assets/vendor/main.js"></script>
 
   

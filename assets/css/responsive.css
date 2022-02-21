@@ -35,7 +35,8 @@
       margin-left: 15px !important;
     }
     .navbar .navbar-nav>li>a {
-      padding-left: 0 !important;
+		padding-right: 0.5rem;
+		padding-left: 0.5rem;
     }
     .navbar-nav {
       margin: 0 !important;
@@ -45,23 +46,523 @@
       border: none !important;
     }
 
+	.navbar-header {
+		width: 100%;
+		justify-content: space-between;
+	}
+	
+
+	.section-main{
+
+		padding: 1rem;
+
+	}
+
+
+	.search-bar input {
+
+		width: 100%;
+
+	}
+
+	.search-bar input:focus{
+
+		width: 100%;
+	}
+
+	.search-bar i{
+
+		left: 5%;
+
+	}
+
+	.project-category .nav-link {
+		
+		padding: 10px 10px 10px 0;
+		font-size: 12px;
+	
+	}
+
+	.project-list li img {
+		max-width: 100%;
+		max-height: 250px;
+	}
+
+	.project-list li {
+
+		margin-right: 0 !important;
+	}
+
+
+	.create-custom {
+
+		flex-direction: column;
+		text-align: center;
+
+	}
+
+	.create-custom p{
+
+		margin-right: 0 !important;
+		margin-bottom: 20px !important;
+
+	}
+
+	.project-draft{
+
+		right: 10px;
+
+	}
+
+	.projects-box{
+
+		padding: 20px;
+
+	}
+
+	.project-user-meta {
+
+		flex-wrap: wrap;
+
+	}
+
+	.project-user-name{
+
+		flex-basis:100%;
+		margin-bottom: 20px;
+		
+	}
+		
+	.global-box{
+
+
+		padding: 1rem;
+
+	}
+
+	.fa-circle-exclamation {
+
+		font-size: 15px;
+
+	}
+
+	.form-checkbox input[type="checkbox"] {
+
+		transform: scale(1);
+		
+	}
+
+	.form-checkbox label{
+
+		font-size: 15px;
+
+	}
+
 }
 
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
+
+	#wrapper{
+		
+		margin-left: 0 !important;
+
+
+	}
+
+	.navbar{
+
+		padding: 10px;
+		
+
+	}
+
+	.navbar-nav{
+
+		flex-direction: row !important;
+		justify-content: space-around;
+
+	}
+
+
+
+	
+
+	#side-navigation{
+
+		width: 0;
+
+	}
+	#hide-side-navigation,
+	#show-side-navigation{
+
+		display: block;
+
+	}
   
+
+	#show-side-navigation{
+
+		padding: 10px;
+
+	}
+
+	.navbar-header .navbar-toggler{
+
+		padding: 10px;
+
+	}
+
+	.navbar-header .navbar-toggler:focus{
+
+		box-shadow: none;
+
+	}
+
+
+
+	#wrapper .navbar>.container-fluid{
+
+		margin: 0 !important;
+		padding: 0;
+
+	}
+
+	.navbar .navbar-nav .nav-item{
+
+			padding: 0 !important;
+
+	}
+
+	
+	.navbar .dropdown-menu {
+		left: 0 !important;
+		right: auto !important;
+	}
+
+	.navbar-nav .dropdown-menu{
+		position: absolute;
+	}
+
+	
+	.section-main .notifications{
+
+		flex-direction: column;
+
+	}
+
+	.notifications .tabs-left{
+		
+		width: 100%;
+		margin-right: 0 !important;
+		padding: 20px 0;
+
+	}
+
+	.notifications .tabs-right{
+		
+		width: 100%;
+
+	}
+
+	.teams{
+
+		flex-direction: column;
+
+	}
+
+	.teams .py-2{
+
+		text-align: center;
+		margin:20px 0;
+
+	}
+
+	.teams div.d-flex{
+
+		justify-content: center;
+		overflow: hidden;	
+
+	}
+
+	.brands-table tbody tr td,
+	.brands-table thead th {
+		padding: 10px 10px;
+		font-size: 13px;
+	}
+
+	.contact-box{
+
+		padding: 30px 20px!important;
+
+	}
+
+	.contact-box-head{
+
+		width: 100%;
+
+	}
+
 }
 
 @media (max-width: 991px) and (min-width: 768px) {
+
+	
+	#wrapper{
+		
+		margin-left: 0 !important;
+
+
+	}
+
+	.navbar{
+
+		padding: 10px;
+		
+
+	}
+
+	.navbar-nav{
+
+		flex-direction: row !important;
+		justify-content: space-around;
+
+	}
+
+
+
+	
+
+	#side-navigation{
+
+		width: 0;
+
+	}
+	#hide-side-navigation,
+	#show-side-navigation{
+
+		display: block;
+
+	}
+  
+
+	#show-side-navigation{
+
+		padding: 10px;
+
+	}
+
+	.navbar-header .navbar-toggler{
+
+		padding: 10px;
+
+	}
+
+	.navbar-header .navbar-toggler:focus{
+
+		box-shadow: none;
+
+	}
+
+
+
+	#wrapper .navbar>.container-fluid{
+
+		margin: 0 !important;
+		padding: 0;
+
+	}
+
+	.navbar .navbar-nav .nav-item{
+
+			padding: 0 !important;
+
+	}
+
+
+	.section-main .notifications{
+
+		flex-direction: column;
+
+	}
+
+	.notifications .tabs-left{
+		
+		width: 100%;
+		margin-right: 0 !important;
+		padding: 20px 0;
+
+	}
+
+	.notifications .tabs-right{
+		
+		width: 100%;
+
+	}
+	.teams{
+
+		flex-direction: column;
+
+	}
+
+	.teams .py-2{
+
+		text-align: center;
+		margin:20px 0;
+
+	}
+
+	.teams div.d-flex{
+
+		justify-content: center;
+
+	}
+
+	.contact-box-head{
+
+		width: 100%;
+
+	}
+
+
  
 }
 
 @media (max-width: 1023px) and (min-width: 992px) {
+
+
+	.section-main .notifications{
+
+		flex-direction: column;
+
+	}
+
+	.notifications .tabs-left{
+		
+		width: 100%;
+		margin-right: 0 !important;
+		padding: 20px 0;
+
+	}
+
+	.notifications .tabs-right{
+		
+		width: 100%;
+
+	}
+
+	.teams{
+
+		flex-direction: column;
+
+	}
+
+
+	.teams .py-2{
+
+		text-align: center;
+		margin:20px 0;
+
+	}
+
+	.teams div.d-flex{
+
+		justify-content: center;
+
+	}
+
+	.email-settings{
+
+		padding: 50px 0;
+
+	}
+
+
+	.fa-circle-exclamation {
+
+		font-size: 15px;
+
+	}
+
+	.form-checkbox input[type="checkbox"] {
+
+		transform: scale(1);
+		
+	}
+
+	.form-checkbox label{
+
+		font-size: 15px;
+
+	}
  
 }
 
 @media (max-width: 1280px) and (min-width: 1024px) {
   
+	
+	.section-main .notifications{
+
+		flex-direction: column;
+
+	}
+
+	.notifications .tabs-left{
+		
+		width: 100%;
+		margin-right: 0 !important;
+		padding: 20px 0;
+
+	}
+
+	.notifications .tabs-right{
+		
+		width: 100%;
+
+	}
+
+	.teams{
+
+		flex-direction: column;
+
+	}
+
+	.teams .py-2{
+
+		text-align: center;
+		margin:20px 0;
+
+	}
+
+	.teams div.d-flex{
+
+		justify-content: center;
+
+	}
+
+	.email-settings{
+
+		padding: 50px 0;
+
+	}
+
+	.fa-circle-exclamation {
+
+		font-size: 15px;
+
+	}
+
+	.form-checkbox input[type="checkbox"] {
+
+		transform: scale(1);
+		
+	}
+
+	.form-checkbox label{
+
+		font-size: 15px;
+
+	}
 }
 
 @media (max-width: 1500px) and (min-width: 1200px) {

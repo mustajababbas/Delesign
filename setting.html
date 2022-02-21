@@ -14,17 +14,19 @@
 <body>
 
 
-  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
-    <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="side-navigation">
+   
     <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
 
+     
       <img class="img-fluid"  src="/assets/images/logo_black.png" alt="">
+      <i class="fa-solid fa-xmark" id="hide-side-navigation"></i>
     
     </div>
   
     <div class="create-projects">
 
-      <a href="#" class="custom-btn primary-btn"><img src="assets/images/home-icon-create-project.png"> Create New Project</a>
+      <a href="create-project.html" class="custom-btn primary-btn"><img src="assets/images/home-icon-create-project.png"> Create New Project</a>
 
     </div>
   
@@ -35,7 +37,7 @@
       </li>
 
       <li class="">
-       <a href="create-project.html" class=""><img src="assets/images/home-icon-projects.png"> Projects</a>
+       <a href="all-projects.html" class=""><img src="assets/images/home-icon-projects.png"> Projects</a>
       </li>
 
       <li class="">
@@ -43,11 +45,11 @@
       </li>
 
       <li class="">
-        <a href="#" class=""><img src="assets/images/home-icon-brands.png"> Brands</a>
+        <a href="brands.html" class=""><img src="assets/images/home-icon-brands.png"> Brands</a>
       </li>
 
       <li class="">
-       <a href="#" class=""><img src="assets/images/home-icon-contact.png"> Contact Support</a>
+       <a href="contact.html" class=""><img src="assets/images/home-icon-contact.png"> Contact Support</a>
       </li>
 
       <li class="">
@@ -55,7 +57,7 @@
        </li>
 
        <li class="">
-        <a href="#" class=""><img src="assets/images/home-icon-settings.png"> Settings</a>
+        <a href="setting.html" class=""><img src="assets/images/home-icon-settings.png"> Settings</a>
        </li>
 
        <li class="sidepanel-dd">
@@ -79,16 +81,19 @@
 
 
     </ul>
-</aside>
+
+  </aside>
       
       <section id="wrapper">
+        
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid mx-2">
             <div class="navbar-header">
+              <i class="fa-solid fa-bars" id="show-side-navigation"></i>
+              <p class="navbar-title"><i class="fa-solid fa-user-alt"></i>&nbsp; Profile</p>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="uil-bars text-white"></i>
+                <i class="fa-solid fa-ellipsis"></i>
               </button>
-              <p class="navbar-title"><i class="fa-solid fa-user"></i>&nbsp; Settings</p>
             </div>
             <div class="collapse navbar-collapse" id="toggle-navbar">
               <ul class="navbar-nav ms-auto custom-dropdown">
@@ -312,7 +317,7 @@
 
                    <div class="col-lg-8">
 
-                        <div class="global-box p-5">
+                        <div class="global-box">
 
                           <form>
 
@@ -333,12 +338,12 @@
                                 <input type="email" id="email">
                               </div>
 
-                              <div class="col-6 form-group">
+                              <div class="col-lg-6 col-12 form-group">
                                 <label class="" for="contactNo">Contact Number</label>
                                 <input type="tel" id="contactNo">
                               </div>
 
-                              <div class="col-6 form-group">
+                              <div class="col-lg-6 col-12 form-group">
                                 <label class="" for="company">Company</label>
                                 <input type="text" id="company">
                               </div>
@@ -353,19 +358,19 @@
                                 <input type="text" id="mailingaddress">
                               </div>
 
-                              <div class="col-6 form-group">
+                              <div class="col-lg-6 col-12 form-group">
                                 <input type="text" id="mailingaddress" placeholder="Katy">
                               </div>
 
-                              <div class="col-6 form-group">
+                              <div class="col-lg-6 col-12 form-group">
                                 <input type="text" id="mailingaddress" placeholder="Texas">
                               </div>
 
-                              <div class="col-6 form-group">
+                              <div class="col-lg-6 col-12 form-group">
                                 <input type="text" id="mailingaddress" placeholder="77776">
                               </div>
 
-                              <div class="col-6 form-group">
+                              <div class="col-lg-6 col-12 form-group">
                                 <input type="text" id="mailingaddress" placeholder="United States">
                               </div>
                              
@@ -392,7 +397,6 @@
 
 
     <script src="assets/vendor/jquery.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/main.js"></script>
 

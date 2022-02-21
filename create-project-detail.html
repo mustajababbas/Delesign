@@ -14,77 +14,85 @@
 <body>
 
 
-    <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
-        <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
-        <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+  <aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="side-navigation">
+   
+    <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
 
-          <img class="img-fluid"  src="/assets/images/logo_black.png" alt="">
-        
-        </div>
-      
-        <div class="create-projects">
+     
+      <img class="img-fluid"  src="/assets/images/logo_black.png" alt="">
+      <i class="fa-solid fa-xmark" id="hide-side-navigation"></i>
+    
+    </div>
+  
+    <div class="create-projects">
 
-          <a href="#" class="custom-btn primary-btn"><img src="assets/images/home-icon-create-project.png"> Create New Project</a>
+      <a href="create-project.html" class="custom-btn primary-btn"><img src="assets/images/home-icon-create-project.png"> Create New Project</a>
 
-        </div>
-      
-        <ul class="categories list-unstyled">
-        
-          <li class="active">
-            <a href="#"><img src="assets/images/home-icon-dashboard-white (1).png"> Notifications</a>
-          </li>
+    </div>
+  
+    <ul class="categories list-unstyled">
+    
+      <li >
+        <a href="index.html" class="active"><img src="assets/images/home-icon-dashboard-white (1).png"> Notifications</a>
+      </li>
 
-          <li class="">
-           <a href="#"><img src="assets/images/home-icon-projects.png"> Projects</a>
-          </li>
+      <li class="">
+       <a href="all-projects.html" class=""><img src="assets/images/home-icon-projects.png"> Projects</a>
+      </li>
 
-          <li class="">
-            <a href="#"><img src="assets/images/home-icon-team.png"> Teams</a>
-          </li>
+      <li class="">
+        <a href="teams.html" class=""><img src="assets/images/home-icon-team.png"> Teams</a>
+      </li>
 
-          <li class="">
-            <a href="#"><img src="assets/images/home-icon-brands.png"> Brands</a>
-          </li>
+      <li class="">
+        <a href="brands.html" class=""><img src="assets/images/home-icon-brands.png"> Brands</a>
+      </li>
 
-          <li class="">
-           <a href="#"><img src="assets/images/home-icon-contact.png"> Contact Support</a>
-          </li>
+      <li class="">
+       <a href="contact.html" class=""><img src="assets/images/home-icon-contact.png"> Contact Support</a>
+      </li>
 
-          <li class="">
-            <a href="#"><img src="assets/images/home-icon-referral.png"> Referral</a>
-           </li>
+      <li class="">
+        <a href="#" class=""><img src="assets/images/home-icon-referral.png"> Referral</a>
+       </li>
 
-           <li class="">
-            <a href="#"><img src="assets/images/home-icon-settings.png"> Settings</a>
-           </li>
+       <li class="">
+        <a href="setting.html" class=""><img src="assets/images/home-icon-settings.png"> Settings</a>
+       </li>
 
-           <li class="">
-            <a href="#"><img src="assets/images/home-icon-integration.png"> Integrations</a>
-           </li>
+       <li class="sidepanel-dd">
+        <a href="#" class="dropdown-icon"><img src="assets/images/home-icon-integration.png"> Integrations</a>
 
-           <li class="">
-            <a href="#"><img src="assets/images/home-icon-feature-request.png"> Feature Requests</a>
-           </li>
+          <ul class="sidepanel-dd-ul">
+            <li><a href="#">Slack Integration</a></li>
+            <li><a href="#">Delesign Api</a></li>
+            <li><a href="#">Zapier Integration</a></li>
+          </ul>
 
-           <li class="">
-            <a href="#"><img src="assets/images/home-icon-knowledge.png"> Knowledge Base</a>
-           </li>
+       </li>
+
+       <li class="">
+        <a href="#" class=""><img src="assets/images/home-icon-feature-request.png"> Feature Requests</a>
+       </li>
+
+       <li class="">
+        <a href="#" class=""><img src="assets/images/home-icon-knowledge.png"> Knowledge Base</a>
+       </li>
 
 
-        </ul>
-      </aside>
+    </ul>
+
+  </aside>
       
       <section id="wrapper">
         <nav class="navbar navbar-expand-md">
           <div class="container-fluid mx-2">
             <div class="navbar-header">
+              <i class="fa-solid fa-bars" id="show-side-navigation"></i>
+              <p class="navbar-title"><i class="fa-solid fa-bell"></i>&nbsp; Notification</p>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggle-navbar" aria-controls="toggle-navbar" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="uil-bars text-white"></i>
+                <i class="fa-solid fa-ellipsis"></i>
               </button>
-              <p class="navbar-title">
-                    <a href="create-project.html"><i class="fa-solid fa-angle-left"></i></a>
-                   <img src="assets/images/create_project_icon.png">&nbsp; Create Blog Images
-                </p>
             </div>
             <div class="collapse navbar-collapse" id="toggle-navbar">
               <ul class="navbar-nav ms-auto custom-dropdown">
@@ -273,14 +281,14 @@
 
                             <div class="create-project-box row">
 
-                                <div class="col-12 form-group">
+                                <div class="col-lg-6 col-12 form-group">
                                     <label class="" for="project_title">Project Title</label>
                                     <input type="text" id="project_title">
                                 </div>
 
                             
 
-                                <div class="col-6 form-group">
+                                <div class="col-lg-6 col-12 form-group">
                                     <label class="" for="file_dimension">File size or dimension</label>
                                     <input type="text" id="file_dimension">
                                 </div>
